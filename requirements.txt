@@ -1,0 +1,10 @@
+casadi>=3.6
+numpy>=1.24
+pyyaml>=6.0
+# The vehicle model, the path and the controller are NOT re-implemented here. They come from
+#     https://github.com/nahueldeniz/nmppfc
+# which is a plain package directory rather than a distribution, so clone it and point this
+# repository at it:
+#     git clone https://github.com/nahueldeniz/nmppfc
+#     export NMPPFC_PATH=$PWD/nmppfc
+# Inside the paper-videos tree the sibling checkout ../../02_nmppfc/code is found automatically.

@@ -1,0 +1,37 @@
+{
+  "config": "configs/field_like.yaml",
+  "name": "field_like",
+  "metrics": {
+    "mean_deviation_m": 0.046299630991819475,
+    "max_deviation_m": 0.25254147587570974,
+    "mean_est_error_m": 0.034960894445837616,
+    "max_est_error_m": 1.0103342743167794,
+    "mean_rtf": 0.16354060681661242,
+    "max_rtf": 0.9460396349982148,
+    "mean_estimator_cpu_s": 0.03270812136332248,
+    "outlier_fraction": 0.2633333333333333,
+    "solver_failures": 4,
+    "steps": 300
+  },
+  "estimator": {
+    "n_window": 15,
+    "alpha": 1.0,
+    "c": 1.0,
+    "ts": 0.2,
+    "w_gain": 1000000.0,
+    "arrival_gain": 1.0,
+    "w_bound": 0.01,
+    "v_bound": 0.1,
+    "beta_max": 1.2217304763960306,
+    "grow_window": true,
+    "wrap_angles": true,
+    "max_iter": 500,
+    "print_level": 0
+  },
+  "sensors": {
+    "mode": "scattered",
+    "delta": 0.25,
+    "seed": 7
+  },
+  "note": "These are this repository's numbers on this scenario, not the paper's. Scenario, disturbances and tuning differ."
+}

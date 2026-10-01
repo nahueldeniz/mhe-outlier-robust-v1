@@ -1,0 +1,12 @@
+# The field run's own sampling rate, kept deliberately: Ts = 0.2 s (5 Hz), N_e = 15,
+# alpha = c = 1, as Section IV-B reports. This is the one configuration here that is coarse on
+# purpose -- it exists to show what the hardware's rate costs. The simulations use Ts = 0.05 s.
+# At 5 Hz this path needs a gentler speed; see NOTES.md, section 'Sampling rate'.
+beta_max_deg: 70
+n_trailers: 1
+ts: 0.2
+steps: 300
+speed: 0.5
+estimator: {n_window: 15, alpha: 1.0, c: 1.0}
+controller: {n_control: 8, n_prediction: 8}
+sensors: {mode: scattered, delta: 0.25, seed: 7}

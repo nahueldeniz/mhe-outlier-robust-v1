@@ -1,0 +1,37 @@
+{
+  "config": "configs/agricultural_25.yaml",
+  "name": "agricultural_25",
+  "metrics": {
+    "mean_deviation_m": 0.025407760723510774,
+    "max_deviation_m": 0.10245239640108698,
+    "mean_est_error_m": 0.022474566341682847,
+    "max_est_error_m": 0.09264678762434207,
+    "mean_rtf": 0.1726720791999469,
+    "max_rtf": 0.7807076399967627,
+    "mean_estimator_cpu_s": 0.008633603959997344,
+    "outlier_fraction": 0.26125,
+    "solver_failures": 0,
+    "steps": 800
+  },
+  "estimator": {
+    "n_window": 10,
+    "alpha": 1.0,
+    "c": 1.0,
+    "ts": 0.05,
+    "w_gain": 1000000.0,
+    "arrival_gain": 1.0,
+    "w_bound": 0.01,
+    "v_bound": 0.1,
+    "beta_max": 1.2217304763960306,
+    "grow_window": true,
+    "wrap_angles": true,
+    "max_iter": 500,
+    "print_level": 0
+  },
+  "sensors": {
+    "mode": "scattered",
+    "delta": 0.25,
+    "seed": 7
+  },
+  "note": "These are this repository's numbers on this scenario, not the paper's. Scenario, disturbances and tuning differ."
+}

@@ -1,0 +1,37 @@
+{
+  "config": "configs/burst_outage.yaml",
+  "name": "burst_outage",
+  "metrics": {
+    "mean_deviation_m": 0.024660388274097268,
+    "max_deviation_m": 0.09146171002427729,
+    "mean_est_error_m": 0.012343732566624067,
+    "max_est_error_m": 0.4299807224891771,
+    "mean_rtf": 0.21922639442501576,
+    "max_rtf": 1.4530954000019847,
+    "mean_estimator_cpu_s": 0.010961319721250789,
+    "outlier_fraction": 0.025,
+    "solver_failures": 0,
+    "steps": 800
+  },
+  "estimator": {
+    "n_window": 20,
+    "alpha": 1.0,
+    "c": 1.0,
+    "ts": 0.05,
+    "w_gain": 1000000.0,
+    "arrival_gain": 1.0,
+    "w_bound": 0.01,
+    "v_bound": 0.1,
+    "beta_max": 1.2217304763960306,
+    "grow_window": true,
+    "wrap_angles": true,
+    "max_iter": 500,
+    "print_level": 0
+  },
+  "sensors": {
+    "mode": "burst",
+    "delta": 1.0,
+    "seed": 7
+  },
+  "note": "These are this repository's numbers on this scenario, not the paper's. Scenario, disturbances and tuning differ."
+}

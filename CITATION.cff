@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper it implements."
+title: "mhe-outlier-robust-v1: robust moving horizon estimation with a GARL-derivative stage cost"
+abstract: >-
+  Python and CasADi implementation of a moving horizon estimator whose stage cost is the square
+  of the derivative of the General Adaptive Robust Loss, for agricultural vehicles whose GNSS
+  measurements contain outliers.
+license: MIT
+type: software
+authors:
+  - family-names: Deniz
+    given-names: Nestor N.
+repository-code: "https://github.com/nahueldeniz/mhe-outlier-robust-v1"
+references:
+  - type: article
+    title: "Robust Moving Horizon Estimation for Autonomous Agricultural Vehicles With GNSS
+      Outliers Using a Robust Loss Function"
+    authors:
+      - family-names: Deniz
+        given-names: Nestor N.
+      - family-names: Sanchez
+        given-names: Guido M.
+      - family-names: Auat Cheein
+        given-names: Fernando A.
+      - family-names: Giovanini
+        given-names: Leonardo L.
+    journal: "IEEE Robotics and Automation Letters"
+    volume: 10
+    issue: 10
+    start: 10815
+    end: 10820
+    year: 2025
+    doi: "10.1109/LRA.2025.3606377"
